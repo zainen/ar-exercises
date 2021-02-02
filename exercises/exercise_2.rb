@@ -10,9 +10,9 @@ puts "----------"
 # 2. Load the second store from the database and assign it to `@store2`.
 # 3. Update the first store (`@store1`) instance in the database. (Change its name or something.)
 
-store1 = Store.first
-store2 = Store.find_by(id: 2)
-puts store1.name
-puts store2.name
-store1.name = "Vancouver"
-puts store1.name
+@store1 = Store.first
+@store2 = Store.find_by(id: 2)
+puts @store1.name
+puts @store2.name
+@store1.name = "Vancouver"
+puts @store1.name
